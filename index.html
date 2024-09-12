@@ -37,6 +37,7 @@
 
     <!-- js -->
     <script src="./js/backgroundImage.js"></script>
+    <script src="./js/cardCarousel.js"></script>
 
     <!-- custom css -->
     <style>
@@ -55,6 +56,46 @@
         background-size: cover;
         background-repeat: no-repeat;
         transition: background-image 1.5s ease-in-out;
+      }
+      .bg-light-black {
+        background-color: #121212;
+      }
+
+      .carousel-container {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .carousel-item {
+        min-width: 33.33%;
+        box-sizing: border-box;
+        padding: 20px;
+
+        text-align: center;
+      }
+
+      .dots {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #717171 ;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .dot.active {
+        background-color: #bbb;
       }
     </style>
   </head>
@@ -80,13 +121,11 @@
           </div>
 
           <!-- right -->
-          <div>
-            <button
-              class="font-sharp-grotesk-book25 text-sm 2xl:text-base px-3 py-1.5 2xl:px-6 2xl:py-[10px] border rounded-lg"
-            >
-              Contact Us
-            </button>
-          </div>
+          <button
+            class="font-sharp-grotesk-book25 text-sm 2xl:text-base px-3 py-1.5 2xl:px-6 2xl:py-[10px] border rounded-lg"
+          >
+            Contact Us
+          </button>
         </div>
       </nav>
 
@@ -95,7 +134,6 @@
         class="banner-background h-screen text-center flex flex-col justify-end items-center"
         id="background"
       >
-        <div id="overlay" class="absolute inset-0 bg-cover bg-center"></div>
         <!-- text container -->
         <div class="container text-white">
           <h1 class="font-sharp-grotesk20 text-6xl">
@@ -153,7 +191,183 @@
 
     <main>
       <!-- our games -->
-      <section></section>
+      <section class="bg-light-black pt-12 pb-20">
+        <div class="container mx-auto">
+          <!-- title container -->
+          <div class="text-white text-center mb-8">
+            <h1 class="font-sharp-grotesk20 text-5xl">Our Games</h1>
+            <p class="text-lg">
+              There are more than 100 games in our portfolio, 80 of them in
+              active operation.
+            </p>
+          </div>
+
+          <!-- card carousel container -->
+          <div class="carousel-container w-[1008px] mx-auto">
+            <div class="carousel">
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_avatar.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/cod_mw3.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_gta6.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_horizon.png"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_alanwake.png"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="grid gap-6">
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                  <a href=""
+                    ><img
+                      class="h-[320px] w-[320px] object-cover rounded-xl hover:scale-105 duration-300 ease-in-out"
+                      src="./images/card_valorant.jpg"
+                      alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-40"></section>
     </main>
 
     <footer></footer>

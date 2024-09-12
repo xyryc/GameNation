@@ -1,6 +1,6 @@
 # GameNation
 
-<img src=''>
+<img src='./images/screenshot.png'>
 
 Profile: <a href='https://www.figma.com/@arthurbal'>arthurbal</a>
 <br>
