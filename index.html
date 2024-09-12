@@ -54,14 +54,41 @@
       }
     </style>
   </head>
-  <body>
-    <header>
+  <body class="font-hanken-grotesk">
+    <header class="relative">
       <!-- navbar -->
-      <nav></nav>
+      <nav
+        class="absolute top-3 2xl:top-6 left-0 right-0 mx-auto bg-black text-white container rounded-xl 2xl:rounded-3xl"
+      >
+        <div class="flex justify-between items-center p-2 2xl:p-4">
+          <!-- left -->
+          <div class="flex items-center space-x-8">
+            <img src="./images/icons/main_logo.png" alt="" />
+            <img src="./images/icons/vertical_line.png" alt="" />
+            <div class="text-base tracking-wider space-x-6">
+              <a href="">Games</a>
+              <a href="">Services</a>
+              <a href="">Team</a>
+              <a href="">Best Game</a>
+              <a href="">Values</a>
+              <a href="">Contact Us</a>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div>
+            <button
+              class="font-sharp-grotesk-book25 text-sm 2xl:text-base px-3 py-1.5 2xl:px-6 2xl:py-[10px] border rounded-lg"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </nav>
 
       <!-- banner -->
       <section
-        class="banner-background h-screen text-center flex flex-col justify-center items-center"
+        class="banner-background h-screen text-center flex flex-col justify-end items-center"
       >
         <!-- text container -->
         <div class="container text-white">
@@ -69,7 +96,7 @@
             Game Art and Development Studio
           </h1>
           <p
-            class="font-hanken-grotesk text-lg tracking-wider my-8 w-3/5 mx-auto"
+            class="font-hanken-grotesk text-lg tracking-wider my-6 2xl:my-8 w-3/5 mx-auto"
           >
             GameNation - a global game development partner that helps developers
             and publishers to build games by providing custom engineering and
@@ -104,12 +131,16 @@
           </div>
 
           <button
-            class="mt-[72px] font-sharp-grotesk-book25 text-xl border px-6 py-3 rounded-xl"
+            class="mt-8 2xl:mt-[72px] font-sharp-grotesk-book25 text-base 2xl:text-xl border px-3 2xl:px-6 py-1.5 2xl:py-3 rounded-xl"
           >
             Start a project
           </button>
 
-          <img class="mx-auto mt-[109px] cursor-pointer" src="./images/icons/scroll_down_icon.png" alt="" />
+          <img
+            class="mx-auto mt-8 2xl:mt-[109px] mb-5 2xl:mb-11 cursor-pointer"
+            src="./images/icons/scroll_down_icon.png"
+            alt=""
+          />
         </div>
       </section>
     </header>
