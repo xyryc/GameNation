@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameNation</title>
+
+    <!-- Grotesk font cdn -->
+    <link
+      href="https://db.onlinewebfonts.com/c/629ed6829f706958b9bdf4f6300dfca0?family=Sharp+Grotesk+SmBold+20+Regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/91d3afe918937141b6ae8e43b1005bc8?family=Sharp+Grotesk+Book+25+Regular"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- custom css -->
+    <style>
+      .font-sharp-grotesk20 {
+        font-family: "Sharp Grotesk SmBold 20 Regular";
+      }
+      .font-sharp-grotesk-book25 {
+        font-family: "Sharp Grotesk Book 25 Regular";
+      }
+      .font-hanken-grotesk {
+        font-family: "Hanken Grotesk", sans-serif;
+      }
+      .banner-background {
+        background-image: linear-gradient(#00000000, #0303038f, #080808),
+          url(./images/banner_background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav></nav>
+
+      <!-- banner -->
+      <section
+        class="banner-background h-screen text-center flex flex-col justify-center items-center"
+      >
+        <!-- text container -->
+        <div class="container text-white">
+          <h1 class="font-sharp-grotesk20 text-6xl">
+            Game Art and Development Studio
+          </h1>
+          <p
+            class="font-hanken-grotesk text-lg tracking-wider my-8 w-3/5 mx-auto"
+          >
+            GameNation - a global game development partner that helps developers
+            and publishers to build games by providing custom engineering and
+            game art services.
+          </p>
+
+          <!-- platforms -->
+          <div class="flex justify-center items-center gap-7">
+            <!-- phone -->
+            <div class="flex items-center gap-3">
+              <img src="./images/icons/phone_icon.png" alt="" />
+              <small class="font-hanken-grotesk text-sm tracking-wider"
+                >Mobile</small
+              >
+            </div>
+
+            <!-- console -->
+            <div class="flex items-center gap-3">
+              <img src="./images/icons/controller_icon.png" alt="" />
+              <small class="font-hanken-grotesk text-sm tracking-wider"
+                >Console</small
+              >
+            </div>
+
+            <!-- desktop -->
+            <div class="flex items-center gap-3">
+              <img src="./images/icons/desktop_icon.png" alt="" />
+              <small class="font-hanken-grotesk text-sm tracking-wider"
+                >Desktop</small
+              >
+            </div>
+          </div>
+
+          <button
+            class="mt-[72px] font-sharp-grotesk-book25 text-xl border px-6 py-3 rounded-xl"
+          >
+            Start a project
+          </button>
+
+          <img class="mx-auto mt-[109px] cursor-pointer" src="./images/icons/scroll_down_icon.png" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
