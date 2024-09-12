@@ -35,6 +35,9 @@
       };
     </script>
 
+    <!-- js -->
+    <script src="./js/backgroundImage.js"></script>
+
     <!-- custom css -->
     <style>
       .font-sharp-grotesk20 {
@@ -51,6 +54,7 @@
           url(./images/banner_background.png);
         background-size: cover;
         background-repeat: no-repeat;
+        transition: background-image 1.5s ease-in-out;
       }
     </style>
   </head>
@@ -89,7 +93,9 @@
       <!-- banner -->
       <section
         class="banner-background h-screen text-center flex flex-col justify-end items-center"
+        id="background"
       >
+        <div id="overlay" class="absolute inset-0 bg-cover bg-center"></div>
         <!-- text container -->
         <div class="container text-white">
           <h1 class="font-sharp-grotesk20 text-6xl">
@@ -145,7 +151,10 @@
       </section>
     </header>
 
-    <main></main>
+    <main>
+      <!-- our games -->
+      <section></section>
+    </main>
 
     <footer></footer>
   </body>
