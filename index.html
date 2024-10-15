@@ -65,6 +65,10 @@
         color: rgba(255, 255, 255, 0.8);
       }
 
+      .input-background {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
       .carousel-container {
         overflow: hidden;
         width: 100%;
@@ -648,6 +652,85 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="bg-light-black relative text-white">
+      <div class="h-[1300px]">
+        <div class=" w-11/12 mx-auto relative z-10">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:gap-56 mb-[120px]">
+            <!-- blank div -->
+            <div class="hidden sm:block"></div>
+            <!-- input field -->
+            <div>
+              <h3 class="text-[34px] font-sharp-grotesk20">
+                Keep up with the GameNation realm!
+              </h3>
+              <p class="text-xl my-5">
+                Sign up to our newsletter to receive the latest news, other
+                exciting news from us at GameNation.
+              </p>
+              <input
+                class="w-full p-6 font-sharp-grotesk20 border input-background placeholder-white rounded-[10px] my-3"
+                type="text"
+                placeholder="First name"
+              />
+              <input
+                class="w-full p-6 font-sharp-grotesk20 border input-background placeholder-white rounded-[10px] my-3"
+                type="text"
+                placeholder="Last name"
+              />
+              <input
+                class="w-full p-6 font-sharp-grotesk20 border input-background placeholder-white rounded-[10px] my-3"
+                type="text"
+                placeholder="Email"
+              />
+              <select
+                id="country"
+                name="country"
+                class="block w-full p-6 font-sharp-grotesk20 border input-background placeholder-white rounded-[10px] my-3"
+              >
+                <option class="bg-gray-600" value="" disabled selected>
+                  Country/Region
+                </option>
+                <option class="bg-gray-600" value="asia">Asia</option>
+                <option class="bg-gray-600" value="middle-east">
+                  Middle East
+                </option>
+                <option class="bg-gray-600" value="africa">Africa</option>
+              </select>
+              <textarea
+                class="w-full p-6 font-sharp-grotesk20 border input-background placeholder-white rounded-[10px] my-3"
+                rows="4"
+                placeholder="Message"
+              ></textarea>
+              <label>
+                <input class="text-sm" type="checkbox" name="promo_agreement" required />
+                I agree to receive promotional offers relating to all Gameloft
+                games and services.
+              </label>
+              <button
+                class="mt-6 w-full py-6 rounded-lg bg-[#327FFF] font-sharp-grotesk-book25 block"
+              >
+                Get in touch
+              </button>
+            </div>
+          </div>
+
+          <img class="mb-6 mx-auto" src="./images/icons/footer_logo.png" alt="">
+        </div>
+
+        <!-- socials -->
+        <div class="h-[135px] bg-[#1A1A1A]">
+          <div class="w-11/12 mx-auto">gray background</div>
+        </div>
+
+        <!-- copyright footer -->
+        <div class="w-11/12 mx-auto">All rights reserved</div>
+      </div>
+
+      <img
+        class="absolute bottom-0 right-0"
+        src="./images/footer_background_spiderman.png"
+        alt=""
+      />
+    </footer>
   </body>
 </html>
