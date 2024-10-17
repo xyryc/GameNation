@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,12 +39,22 @@
       };
     </script>
 
+    <!-- icons cdn -->
+    <script
+      src="https://kit.fontawesome.com/651adfbaf7.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- js -->
     <script src="./js/backgroundImage.js"></script>
     <script src="./js/cardCarousel.js"></script>
 
     <!-- custom css -->
     <style>
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+
       .font-sharp-grotesk20 {
         font-family: "Sharp Grotesk SmBold 20 Regular";
       }
@@ -63,6 +77,10 @@
 
       .text-light-gray {
         color: rgba(255, 255, 255, 0.8);
+      }
+
+      .socials-background {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       .input-background {
@@ -653,11 +671,11 @@
     </main>
 
     <footer class="bg-light-black relative text-white">
-      <div class="h-[1300px]">
-        <div class=" w-11/12 mx-auto relative z-10">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:gap-56 mb-[120px]">
+      <div>
+        <div class="w-11/12 mx-auto relative z-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-56 mb-[120px]">
             <!-- blank div -->
-            <div class="hidden sm:block"></div>
+            <div class="hidden md:block"></div>
             <!-- input field -->
             <div>
               <h3 class="text-[34px] font-sharp-grotesk20">
@@ -701,9 +719,9 @@
                 rows="4"
                 placeholder="Message"
               ></textarea>
-              <label>
-                <input class="text-sm" type="checkbox" name="promo_agreement" required />
-                I agree to receive promotional offers relating to all Gameloft
+              <label class="font-montserrat text-sm">
+                <input type="checkbox" name="promo_agreement" required />
+                I agree to receive promotional offers relating to all GameNation
                 games and services.
               </label>
               <button
@@ -714,20 +732,58 @@
             </div>
           </div>
 
-          <img class="mb-6 mx-auto" src="./images/icons/footer_logo.png" alt="">
+          <img
+            class="mb-6 mx-auto"
+            src="./images/icons/footer_logo.png"
+            alt=""
+          />
         </div>
 
         <!-- socials -->
-        <div class="h-[135px] bg-[#1A1A1A]">
-          <div class="w-11/12 mx-auto">gray background</div>
+        <div class="py-8 bg-[#1A1A1A] font-montserrat text-center">
+          <div class="w-11/12 mx-auto">
+            <h3 class="text-xs font-normal mb-[14px]">Find us on</h3>
+            <!-- social icons container -->
+            <div class="flex justify-center items-center gap-4">
+              <i
+                class="fa-brands fa-facebook-f p-3 socials-background rounded-lg"
+              ></i>
+              <i
+                class="fa-brands fa-instagram p-3 socials-background rounded-lg"
+              ></i>
+              <i
+                class="fa-brands fa-linkedin-in p-3 socials-background rounded-lg"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien p-3 socials-background rounded-lg"
+              ></i>
+              <i
+                class="fa-brands fa-discord p-3 socials-background rounded-lg"
+              ></i>
+            </div>
+          </div>
         </div>
 
         <!-- copyright footer -->
-        <div class="w-11/12 mx-auto">All rights reserved</div>
+        <div
+          class="w-11/12 mx-auto text-white text-center font-montserrat py-4"
+        >
+          <div class="my-4">
+            <p class="text-[10px] font-normal">
+              ©2023 GameNation. All rights reserved. GameNation and the
+              GameNation logo are trademarks of GameNation in the U.S. and/or
+              other countries.
+            </p>
+            <p class="text-[10px] font-normal">
+              All other trademarks are the property of their respective owners.
+            </p>
+          </div>
+        </div>
       </div>
 
+      <!-- footer spiderman image -->
       <img
-        class="absolute bottom-0 right-0"
+        class="absolute bottom-0 right-0 2xl:right-80 -z-10 sm:z-0"
         src="./images/footer_background_spiderman.png"
         alt=""
       />
