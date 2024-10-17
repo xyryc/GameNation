@@ -126,7 +126,7 @@
     </style>
   </head>
   <body class="font-hanken-grotesk">
-    <header class="relative hidden">
+    <header class="relative">
       <!-- navbar -->
       <nav
         class="absolute top-3 2xl:top-6 left-0 right-0 mx-auto bg-black text-white container rounded-xl 2xl:rounded-3xl"
@@ -136,7 +136,7 @@
           <div class="flex items-center space-x-8">
             <img src="./images/icons/main_logo.png" alt="" />
             <img src="./images/icons/vertical_line.png" alt="" />
-            <div class="text-base tracking-wider space-x-6">
+            <div class="text-base tracking-wider space-x-6 hidden lg:block">
               <a href="">Games</a>
               <a href="">Services</a>
               <a href="">Team</a>
@@ -161,12 +161,12 @@
         id="background"
       >
         <!-- text container -->
-        <div class="container text-white">
+        <div class="w-11/12 mx-auto text-white">
           <h1 class="font-sharp-grotesk20 text-6xl">
             Game Art and Development Studio
           </h1>
           <p
-            class="font-hanken-grotesk text-lg tracking-wider my-6 2xl:my-8 w-3/5 mx-auto"
+            class="font-hanken-grotesk text-lg tracking-wider my-6 2xl:my-8 sm:w-3/5 mx-auto"
           >
             GameNation - a global game development partner that helps developers
             and publishers to build games by providing custom engineering and
@@ -217,8 +217,8 @@
 
     <main>
       <!-- our games section -->
-      <section class="bg-light-black pt-12 pb-20 hidden">
-        <div class="container mx-auto">
+      <section class="bg-light-black pt-12 pb-20">
+        <div class="w-11/12 mx-auto">
           <!-- title container -->
           <div class="text-white text-center mb-8">
             <h1 class="font-sharp-grotesk20 text-5xl">Our Games</h1>
@@ -229,7 +229,7 @@
           </div>
 
           <!-- card carousel container -->
-          <div class="carousel-container w-[1008px] mx-auto">
+          <div class="carousel-container xl:w-[1008px] mx-auto">
             <div class="carousel">
               <div class="carousel-item">
                 <div class="grid gap-6">
@@ -248,7 +248,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -265,7 +265,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -282,7 +282,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -299,7 +299,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -316,7 +316,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -333,7 +333,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -350,7 +350,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -367,7 +367,7 @@
                 </div>
               </div>
 
-              <div class="carousel-item">
+              <div class="carousel-item hidden sm:block">
                 <div class="grid gap-6">
                   <a href=""
                     ><img
@@ -406,7 +406,9 @@
           </div>
 
           <!-- card container -->
-          <div class="relative grid grid-cols-1 md:grid-cols-2 p-10 bg-[#1E1E1E] rounded-2xl">
+          <div
+            class="relative grid grid-cols-1 md:grid-cols-2 p-10 bg-[#1E1E1E] rounded-2xl"
+          >
             <!-- spiderman image -->
             <img
               class="absolute top-0 left-0 hidden md:block"
@@ -496,7 +498,7 @@
       </section>
 
       <!-- teams section -->
-      <section class="pt-12 pb-40 bg-light-black hidden">
+      <section class="pt-12 pb-40 bg-light-black">
         <div class="w-11/12 mx-auto">
           <!-- title container -->
           <div class="text-white text-center mb-8">
